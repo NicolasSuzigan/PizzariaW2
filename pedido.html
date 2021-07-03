@@ -37,19 +37,18 @@
     <div class="container">
         <main>
             <h2 class="title">Faça seu pedido</h2>
-            <form class="form">
+            <form class="form" method="GET" action="index.php">
                 <div class="form-group">
                     <label class="form-group__label" for="name">Seu Nome</label>
                     <textarea name="name" id="name" class="form-group__input form-group__select" placeholder="Nome"></textarea>
                 </div>
-                <p>Você selecionou <strong id="selectedFlavors">0</strong> de <strong id="limitFlavors">0</strong> sabores</p>
                 <div class="options">
-                    <h3 class="form__subtitle">Selecione os sabores</h3>
+                    <h3 class="form__subtitle">Selecione os sabores disponiveis: </h3>
 
                     <div class="flavors-options">
                         <div class="form-group form-group-checkbox">
                             <div class="checkbox__input">
-                                <input type="checkbox" name="flavors[]" value="" onchange="updateSelected()">
+                                <input type="checkbox" name="flavors[]" value="">
                                 <label class="form-group__label">
                                     <strong class="label__flavor">Pizza de Calabresa c/ Catupiry</strong>
                                     <div class="ingredients"><p>Calabresa, Queijo, Cebola e Catupiry</p></div>
@@ -60,7 +59,7 @@
 
                         <div class="form-group form-group-checkbox">
                             <div class="checkbox__input">
-                                <input type="checkbox" name="flavors[]" value="" onchange="updateSelected()">
+                                <input type="checkbox" name="flavors[]" value="">
                                 <label class="form-group__label">
                                     <strong class="label__flavor">Pizza de frango</strong>
                                     <div class="ingredients"><p>Frango, Queijo e Catupiry</p></div>
@@ -71,7 +70,7 @@
 
                         <div class="form-group form-group-checkbox">
                             <div class="checkbox__input">
-                                <input type="checkbox" name="flavors[]" value="" onchange="updateSelected()">
+                                <input type="checkbox" name="flavors[]" value="">
                                 <label class="form-group__label">
                                     <strong class="label__flavor">Pizza de Brócolis com bacon	</strong>
                                     <div class="ingredients"><p>Bacon, Brócolis, Catupiry e Queijo</p></div>
@@ -82,7 +81,7 @@
 
                         <div class="form-group form-group-checkbox">
                             <div class="checkbox__input">
-                                <input type="checkbox" name="flavors[]" value="" onchange="updateSelected()">
+                                <input type="checkbox" name="flavors[]" value="">
                                 <label class="form-group__label">
                                     <strong class="label__flavor">Pizza Light</strong>
                                     <div class="ingredients"><p>Abobrinha, Frango e Ovo</p></div>
@@ -91,22 +90,18 @@
                             <img class="checkbox-image" src="assets/images/pizza-bacon.jpg" alt="Imagem de uma pizza do sabor informado">
                         </div>
                     </div>
-
-                    
-
-                    
                     
                     <div class="form-group form-group-radio">
-                        <h3 class="form__subtitle">Selecione um ingrediente adicional</h3>
-                        <label><input type="radio" name="edge" value="">Abobrinha</label><br>
-                        <label><input type="radio" name="edge" value="">Bacon</label><br>
-                        <label><input type="radio" name="edge" value="">Brócolis</label><br>
-                        <label><input type="radio" name="edge" value="">Calabresa</label><br>
-                        <label><input type="radio" name="edge" value="">Catupiry</label><br>
-                        <label><input type="radio" name="edge" value="">Cebola</label><br>
-                        <label><input type="radio" name="edge" value="">Frango</label><br>
-                        <label><input type="radio" name="edge" value="">Ovo</label><br>
-                        <label><input type="radio" name="edge" value="">Queijo</label><br>
+                        <h3 class="form__subtitle">Selecione um ingrediente adicional ou monte a pizza do jeito que desejar</h3>
+                        <label><input type="checkbox" name="Abobrinha" value="3,50">Abobrinha - R$ 3,50 </label><br>
+                        <label><input type="checkbox" name="Bacon" value="8,25">Bacon - R$ 8,25 </label><br>
+                        <label><input type="checkbox" name="Brócolis" value="5,20">Brócolis - R$ 5,20 </label><br>
+                        <label><input type="checkbox" name="Calabresa" value="7,50">Calabresa - R$ 7,50 </label><br>
+                        <label><input type="checkbox" name="Catupiry" value="5,50">Catupiry - R$ 5,50 </label><br>
+                        <label><input type="checkbox" name="Cebola" value="4,99">Cebola - R$ 4,99 </label><br>
+                        <label><input type="checkbox" name="Frango" value="6,50">Frango - R$ 6,50 </label><br>
+                        <label><input type="checkbox" name="Ovo" value="3,99">Ovo - R$ 3,99 </label><br>
+                        <label><input type="checkbox" name="Queijo" value="6,50">Queijo - R$ 6,50 </label><br>
                     </div>
 
                 </div>
@@ -114,13 +109,6 @@
             </form>
         </main>
 
-        <aside class="promotion">
-            <h2 class="promotion__title">Faça seu pedido Já!</h2>
-            <img class="promotion__icon" src="assets/images/logo.png" alt="Icone de uma fatia de pizza">
-            <p class="promotion__description">A melhor pizza da região você encontra aqui</p>
-
-            <a href="pedido.html" class="btn--red promotion__btn">Faça seu pedido</a>
-        </aside>
     </div>
 
     

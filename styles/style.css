@@ -328,7 +328,7 @@ ol {
     .image-container {
         width: 100%;
         display: block;
-        background-color: #FFAE58;
+        background-color: black;
         box-sizing: border-box;
         display: flex;
         align-items: center;
