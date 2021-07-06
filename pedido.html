@@ -37,7 +37,7 @@
     <div class="container">
         <main>
             <h2 class="title">Faça seu pedido</h2>
-            <form class="form" method="GET" action="index.php">
+            <form class="form" method="POST" action="index1.php">
                 <div class="form-group">
                     <label class="form-group__label" for="name">Seu Nome</label>
                     <textarea name="name" id="name" class="form-group__input form-group__select" placeholder="Nome"></textarea>
@@ -48,7 +48,7 @@
                     <div class="flavors-options">
                         <div class="form-group form-group-checkbox">
                             <div class="checkbox__input">
-                                <input type="checkbox" name="flavors[]" value="">
+                                <input type="checkbox" name="flavor1" value="24,99">
                                 <label class="form-group__label">
                                     <strong class="label__flavor">Pizza de Calabresa c/ Catupiry</strong>
                                     <div class="ingredients"><p>Calabresa, Queijo, Cebola e Catupiry</p></div>
@@ -59,7 +59,7 @@
 
                         <div class="form-group form-group-checkbox">
                             <div class="checkbox__input">
-                                <input type="checkbox" name="flavors[]" value="">
+                                <input type="checkbox" name="flavor1" value="16,99">
                                 <label class="form-group__label">
                                     <strong class="label__flavor">Pizza de frango</strong>
                                     <div class="ingredients"><p>Frango, Queijo e Catupiry</p></div>
@@ -70,7 +70,7 @@
 
                         <div class="form-group form-group-checkbox">
                             <div class="checkbox__input">
-                                <input type="checkbox" name="flavors[]" value="">
+                                <input type="checkbox" name="flavor1" value="25,45">
                                 <label class="form-group__label">
                                     <strong class="label__flavor">Pizza de Brócolis com bacon	</strong>
                                     <div class="ingredients"><p>Bacon, Brócolis, Catupiry e Queijo</p></div>
@@ -81,7 +81,7 @@
 
                         <div class="form-group form-group-checkbox">
                             <div class="checkbox__input">
-                                <input type="checkbox" name="flavors[]" value="">
+                                <input type="checkbox" name="flavor1" value="13,99">
                                 <label class="form-group__label">
                                     <strong class="label__flavor">Pizza Light</strong>
                                     <div class="ingredients"><p>Abobrinha, Frango e Ovo</p></div>
@@ -93,15 +93,15 @@
                     
                     <div class="form-group form-group-radio">
                         <h3 class="form__subtitle">Selecione um ingrediente adicional ou monte a pizza do jeito que desejar</h3>
-                        <label><input type="checkbox" name="Abobrinha" value="3,50">Abobrinha - R$ 3,50 </label><br>
-                        <label><input type="checkbox" name="Bacon" value="8,25">Bacon - R$ 8,25 </label><br>
-                        <label><input type="checkbox" name="Brócolis" value="5,20">Brócolis - R$ 5,20 </label><br>
-                        <label><input type="checkbox" name="Calabresa" value="7,50">Calabresa - R$ 7,50 </label><br>
-                        <label><input type="checkbox" name="Catupiry" value="5,50">Catupiry - R$ 5,50 </label><br>
-                        <label><input type="checkbox" name="Cebola" value="4,99">Cebola - R$ 4,99 </label><br>
-                        <label><input type="checkbox" name="Frango" value="6,50">Frango - R$ 6,50 </label><br>
-                        <label><input type="checkbox" name="Ovo" value="3,99">Ovo - R$ 3,99 </label><br>
-                        <label><input type="checkbox" name="Queijo" value="6,50">Queijo - R$ 6,50 </label><br>
+                        <label><input type="checkbox" name="Abobrinha" value='3.50'>Abobrinha - R$ 3,50 </label><br>
+                        <label><input type="checkbox" name="Bacon" value="8.25">Bacon - R$ 8,25 </label><br>
+                        <label><input type="checkbox" name="Brócolis" value="5.20">Brócolis - R$ 5,20 </label><br>
+                        <label><input type="checkbox" name="Calabresa" value="7.50">Calabresa - R$ 7,50 </label><br>
+                        <label><input type="checkbox" name="Catupiry" value="5.50">Catupiry - R$ 5,50 </label><br>
+                        <label><input type="checkbox" name="Cebola" value="4.99">Cebola - R$ 4,99 </label><br>
+                        <label><input type="checkbox" name="Frango" value="6.50">Frango - R$ 6,50 </label><br>
+                        <label><input type="checkbox" name="Ovo" value="3.99">Ovo - R$ 3,99 </label><br>
+                        <label><input type="checkbox" name="Queijo" value="6.50">Queijo - R$ 6,50 </label><br>
                     </div>
 
                 </div>
