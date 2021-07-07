@@ -20,7 +20,9 @@ Tabela de conteúdos
    * Como executar o projeto
    * Tecnologias
    * Como contribuir no projeto
+   * Considerações Finais
    * Licença
+   
 <!--te-->
 
 
@@ -79,6 +81,17 @@ As seguintes ferramentas foram usadas na construção do projeto:
 > Caso tenha alguma dúvida confira este [guia de como contribuir no GitHub](./CONTRIBUTING.md)
 
 ---
+
+## 📝 Considerações Finais
+  O backend foi mais um teste e uma experiencia com o php, o melhor seria refatorar o codigo, para melhorar apresentação seria necessario criar um objeto pizza e assim guardar  em um arrey de objetos as pizza e os sabores para conseguir fazer a comparação toda no backend.
+
+  Assim não teria erro, mas ainda estou apanhando um pouco no php.
+
+  Gostaria de estruturar melhor o codigo, pois achei muito codigo em php misturado com o html. Não achei estruturas em somente php e o front comunicando com ele, tive duvidas nessa tipo de uso como implementar da melhor forma possivel.
+
+  O front fiz com base em algumas classes do bootstrap mas não cheguei a usar a biblioteca.
+
+
 
 ## 📝 Licença
 
