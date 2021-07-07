@@ -99,15 +99,34 @@
   }
 
   echo $name."<br>";
-  echo "Total pedido: " .$totalPedido. "<br>";
-  
+
   echo "Total de recheios escolhidos: " .$qtdRecheio. "<br>";
+
   echo "<br>";
 
   echo "Descontos Aplicados: ". "<br>";
 
-  echo "Light:  " .$descontoLight. "<br>";
-  echo "Plus calabresa e catupiry: " .$calabresaPlusCatupiri. "<br>";
-  echo "qtd extras: " .$qtdRecheio;
+  //Aplicando descontos
+
+  if($descontoLight == 1){
+    echo "Light: Desconto de 10% Aplicado com Sucesso! <br>";
+    $totalPedido = $totalPedido - ($totalPedido * 0.10);
+  }else {
+    echo "Light: Infelizmente a sua opção de pizza não pode receber esse desconto! <br>";
+  }
+
+  if($calabresaPlusCatupiri == 2){
+    echo "Plus calabresa e catupiry: Desconto de 50% no catupiry aplicado! <br>";
+    $totalPedido = $totalPedido - 2.25;
+  }else {
+    echo "Plus calabresa e catupiry: Desconto no catupiry invalido! <br>";
+  }
+  if($calabresaPlusCatupiri == 2){
+    echo "Desconto extra adicionais: Desconto de 5% pela quantidade de extras! <br>";
+    $totalPedido = $totalPedido - ($totalPedido*0.05);
+  }else {
+    echo "Desconto extra adicionais: Falta recheio nessa pizza, desconto não aplicado! <br>";
+  }
   
+    echo "<br> Valor total do pedido: " .$totalPedido. "<br>";
 ?>
