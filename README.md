@@ -100,7 +100,3 @@ Este projeto esta sobe a licença [MIT](./LICENSE).
 Feito com ❤️ por Nícolas Suzigan 👋🏽 [Entre em contato!](https://www.linkedin.com/in/nicolassuzigan/)
 
 ---
-
-##  Versões do README
-
-[Português 🇧🇷](./README.md)  |  [Inglês sem emojis 🇺🇸](./README-en.md) | [Portugues sem logo  🇧🇷](./README-sem-logo.md) 
